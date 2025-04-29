@@ -1,4 +1,10 @@
-*{
+
+/* 
+ * Section: Code for index.html
+ * Description: This section contains the HTML structure and content for the main index page of the application. 
+ * It includes the layout, elements, and any necessary attributes to render the page correctly.
+ */
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -69,14 +75,13 @@
     @media(max-width:995px){
         nav{
             position: absolute;
-            display: none;
-            top: 0%;
+            top: 100%;
             right: 0;
             border-left: 3px solid white;
             border-left: 3px solid white;
             border-bottom: 3px solid white;
             padding: 1rem;
-            border-top: 0.1rem solid rgb(122, 27, 68);
+            border-top: 0.1rem solid rgba(0,0,0,0.1);
         }
     nav.active{
         display: block;
@@ -254,4 +259,18 @@ animation: cursor 0.6s infinite;
     width: 70vh;
     margin-top:4rem ;
 }
+    
   
+/* 
+    CSS for Portfolio HTML
+    -----------------------
+    This section contains styles specifically designed for the portfolio HTML page. 
+    It includes layout, typography, and visual enhancements to ensure a professional 
+    and responsive design. The styles aim to provide a clean and user-friendly 
+    interface for showcasing portfolio content effectively.
+*/
+
+section.portfolio{
+    padding: 5rem 9% 5rem;
+    background-color: rgb(122, 27, 68);
+}
