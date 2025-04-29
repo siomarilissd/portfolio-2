@@ -261,16 +261,3 @@ animation: cursor 0.6s infinite;
 }
     
   
-/* 
-    CSS for Portfolio HTML
-    -----------------------
-    This section contains styles specifically designed for the portfolio HTML page. 
-    It includes layout, typography, and visual enhancements to ensure a professional 
-    and responsive design. The styles aim to provide a clean and user-friendly 
-    interface for showcasing portfolio content effectively.
-*/
-
-section.portfolio{
-    padding: 5rem 9% 5rem;
-    background-color: rgb(122, 27, 68);
-}
