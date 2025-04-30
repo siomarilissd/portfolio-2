@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="navigation.css">
+
     <meta name="author" content="Siomarilis Davila"> 
 <meta name="description" content="Portfolio site showcasing the work of Siomarilis, a graphic designer specializing in typography, branding, and digital design. Explore projects, motion graphics, and creative experiments."> 
 <meta name="keywords" content="graphic design, typography, branding, UI/UX, motion graphics, portfolio, web design, creative"> 
@@ -37,52 +39,73 @@
         </nav>
     </header>
     
+<!--Font Awesome CDN-->     
+<div class="container">
 
-            <div class="item" style="background-image: url(images/graphicdesign.svg);">
-        <div class="content">
-            <div class="name">Graphic Design</div>
-            <div class="des">This Portfolio contains everything Graphic Design based. Separating Branding from logo creation. This one mostly contains only logos and secondary logos I created for brands in my local area.</div>
-            <button>Portfolio</button>
-            </div>
-        </div>
+    <div class="slide">
+
         
-
-        <div class="container">
-            <div class="item" style="background-image: url(images/brandingw.svg);">
-        <div class="content">
-            <div class="name">Branding</div>
-            <div class="des">This Portfolio contains everything Branding based. Separating just logo creation from a full brand identity. This contains thought processes, logos, color palettes, and mockups.</div>
-            <button>Portfolio</button>
+        <div class="item" style="background-image: url(images/graphicdesign.svg);">
+            <div class="content">
+                <div class="name">Graphic Design</div>
+                <div class="des">This Portfolio contains everything Graphic Design based. Separating Branding from logo creation. This one mostly contains only logos and secondary logos I created for brands in my local area.</div>
+                <button>Portfolio</button>
             </div>
         </div>
-        
-        <div class="container">
-            <div class="item" style="background-image: url(images/competition.svg);">
-        <div class="content">
-            <div class="name">Competitions</div>
-            <div class="des">This Portfolio contains every competition piece I have done for Business Professionals America when competing in Graphic Design competitions. To team and solo events, and what I won.</div>
-            <button>Portfolio</button>
+        <div class="item" style="background-image: url(images/brandingw.svg);">
+            <div class="content">
+                <div class="name">Branding</div>
+                <div class="des">This Portfolio contains everything Branding based. Separating just logo creation from a full brand identity. This contains thought processes, logos, color palettes, and mockups. </div>
+                <button>Portfolio</button>
             </div>
         </div>
-        
-        <div class="container">
-            <div class="item" style="background-image: url(images/illustration/backgrounds.svg);">
-        <div class="content">
-            <div class="name">Illustrations</div>
-            <div class="des">This Portfolio contains everything Illustration based. From Markers, still-life, and even digital illustrations. This contains pieces from 2019 to now. With variety of style, this portfolio maybe the largest.</div>
-            <button>Portfolio</button>
+        <div class="item" style="background-image: url(images/competition.svg);">
+            <div class="content">
+                <div class="name">Competition</div>
+                <div class="des">This Portfolio contains every competition piece I have done for Business Professionals America when competing in Graphic Design competitions. To team and solo events, and what I won.</div>
+                <button>Portfolio</button>
             </div>
         </div>
-
-        <div class="container">
-            <div class="item" style="background-image: url(images/painting.svg);">
-        <div class="content">
-            <div class="name">Paintings</div>
-            <div class="des">This Portfolio contains everything painting based. I mainly do Acrylic and Gauche paintings. Smallest of my portfolio but still growing as we speak. I mainly do landscape portraits.</div>
-            <button>Portfolio</button>
+        <div class="item" style="background-image: url(images/illustration\ backgrounds.svg);">
+            <div class="content">
+                <div class="name">Illustration</div>
+                <div class="des">This Portfolio contains everything Illustration based. From Markers, still-life, and even digital illustrations. This contains pieces from 2019 to now. With variety of style, this portfolio maybe the largest.</div>
+                <button>Portfolio</button>
             </div>
         </div>
-
+        <div class="item" style="background-image: url(images/painting.svg);">
+            <div class="content">
+                <div class="name">Painting</div>
+                <div class="des">This Portfolio contains everything painting based. I mainly do Acrylic and Gauche paintings. Smallest of my portfolio but still growing as we speak. I mainly do landscape portraits.</div>
+                <button>Portfolio</button>
+            </div>
         </div>
     </div>
+
+    <div class="button">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <script>
+        // Select the "next" and "prev" buttons
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        
+        // Add a click event listener to the "next" button
+        next.addEventListener('click', function () {
+            // Select all elements with the class "item"
+            let items = document.querySelectorAll('.item');
+            // Move the first item to the end of the ".slide" container
+            document.querySelector('.slide').appendChild(items[0]);
+        });
+        
+        // Add a click event listener to the "prev" button
+        prev.addEventListener('click', function () {
+            // Select all elements with the class "item"
+            let items = document.querySelectorAll('.item');
+            // Move the last item to the beginning of the ".slide" container
+            document.querySelector('.slide').prepend(items[items.length - 1]);
+        });
+    </script>
+</div>
 </body>
