@@ -37,4 +37,102 @@
             
         </nav>
     </header>
+<main>
+    <h1>Upcoming Event</h1>
+    <p>Join me for Greta Retro <strong>September 18, 2025</strong>.</p>
     
+    <div id="countdown"></div>
+    
+    <section>
+        <h2>Event Details</h2>
+        <p>
+         This event will feature live performances, interactive art by students and a art ally, where many artist will be selling their work; including me. Don't miss this opportunity to enjoy yourself and the community of artist you will be around.
+        </p>
+    </section>
+    <section style="margin-top: 20px;">
+        <h2>Location</h2>
+        <p>
+            UMASS Dartmouth, College of Visual and Performing Arts<br>
+            285 Old Westport Rd, Dartmouth, MA 02747
+        </p>
+    </section>
+</main>
+
+<script>
+    function updateCountdown() {
+        const eventDate = new Date('September 18, 2025 00:00:00').getTime();
+        const now = new Date().getTime();
+        const timeLeft = eventDate - now;
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById('countdown').innerHTML = 
+            `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+
+        if (timeLeft < 0) {
+            clearInterval(countdownInterval);
+            document.getElementById('countdown').innerHTML = "The event has started!";
+        }
+    }
+
+    const countdownInterval = setInterval(updateCountdown, 1000);
+    updateCountdown();
+</script>
+<style>
+    body {
+        font-family: 'Futura', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: url('images/websitebackground.svg') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        text-align: center;
+    }
+
+    main {
+        max-width: 800px;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    #countdown {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    section {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    section p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+</style>
