@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="navigation.css">
     <meta name="author" content="Siomarilis Davila"> 
 <meta name="description" content="Portfolio site showcasing the work of Siomarilis, a graphic designer specializing in typography, branding, and digital design. Explore projects, motion graphics, and creative experiments."> 
 <meta name="keywords" content="graphic design, typography, branding, UI/UX, motion graphics, portfolio, web design, creative"> 
@@ -30,80 +31,97 @@
         <nav>
          <a href="portfolio.html" class="back-button">Back</a>
             <a href="shop.html">Shop</a> 
-            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html">Home</a>
             <a href="events.html">Events</a>
             <a href="about-me.html">About Me</a>
             
         </nav>
     </header>
 
-    <main>
-        <section class="portfolio">
-            <h1>My Portfolio</h1>
-            <div class="portfolio-grid">
-                <!-- Portfolio item 1 -->
-                <div class="portfolio-item">
-                    <img src="images/project1.jpg" alt="Project 1">
-                    <p>Project 1 Description</p>
-                </div>
-                <!-- Portfolio item 2 -->
-                <div class="portfolio-item"></div>
-                    <img src="images/project2.jpg" alt="Project 2">
-                    <p>Project 2 Description</p>
-                </div>
-                <!-- Portfolio item 3 -->
-                <div class="portfolio-item">
-                    <img src="images/project3.jpg" alt="Project 3">
-                    <p>Project 3 Description</p>
-                </div>
-                <!-- Portfolio item 4 -->
-                <div class="portfolio-item">
-                    <img src="images/project4.jpg" alt="Project 4">
-                    <p>Project 4 Description</p>
-                </div>
-                <!-- Portfolio item 5 -->
-                <div class="portfolio-item">
-                    <img src="images/project5.jpg" alt="Project 5">
-                    <p>Project 5 Description</p>
-                </div>
-            </div>
-        </section>
+    <main class="portfolio-grid">
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio1.svg" alt="Project 1">
+            <p>Project 1</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/branding2.png" alt="Project 2">
+            <p>Project 2</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/branding3.png" alt="Project 3">
+            <p>Project 3</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio4.svg" alt="Project 4">
+            <p>Project 4</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio5.svg" alt="Project 5">
+            <p>Project 5</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio6.svg" alt="Project 6">
+            <p>Project 6</p>
+        </div>
+             <div class="grid-item">
+            <img src="images/branding/brandingportfolio7.svg" alt="Project 7">
+            <p>Project 7</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio8.svg" alt="Project 8">
+            <p>Project 8</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio9.svg" alt="Project 9">
+            <p>Project 9</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio10.svg" alt="Project 10">
+            <p>Project 10</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio11.svg" alt="Project 11">
+            <p>Project 11</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio12.svg" alt="Project 12">
+            <p>Project 12</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio13.svg" alt="Project 13">
+            <p>Project 13</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio14.svg" alt="Project 14">
+            <p>Project 14</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio15.png" alt="Project 15">
+            <p>Project 15</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio16.png" alt="Project 16">
+            <p>Project 16</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio17.svg" alt="Project 17">
+            <p>Project 17</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/branding/brandingportfolio23.svg" alt="Project 19">
+            <p>Project 19</p>
+        </div>
     </main>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .portfolio {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .portfolio-item {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .portfolio-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .portfolio-item p {
-            margin: 10px;
-            font-size: 14px;
-        }
-    </style>
+    <footer>
+    <div class="footer-container"></div>
+        <p style="font-family: 'Futura', sans-serif;">Connect with me:</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@Siomy_Studios/videos" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/siomarilis-santos" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/siomarilissd" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/siomarilis_arts?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:siomarilis.s@gmail.com" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p style="font-family: 'Futura', sans-serif;">&copy; 2025 Siomarilis. All rights reserved.</p>
+    </div>
+</footer>
