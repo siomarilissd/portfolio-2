@@ -36,3 +36,63 @@
             
         </nav>
     </header>
+
+    <section class="not-found">
+        <div class="container">
+            <h1>404</h1>
+            <p>This isn’t the page you’re looking for… unless you enjoy awkwardly opening occupied stalls.</p>
+            <img src="images/pointing.png" alt="Pointing to 404" class="not-found-image">
+            <a href="index.html" class="back-home">Go Back Home</a>
+        </div>
+    </section>
+
+    <style>
+        .not-found {
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 10%; /* Pushes the section 10% below the navigation bar */
+        }
+
+        .not-found h1 {
+            font-size: 6rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .not-found p {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .not-found-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .back-home {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-home:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .not-found h1 {
+                font-size: 4rem;
+            }
+
+            .not-found p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>

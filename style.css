@@ -111,3 +111,48 @@ Ensure that all opening and closing braces `{}` are properly matched to avoid sy
 If you encounter a `}` expected error, verify that all rules are correctly enclosed within braces.
 */
 /* Home Page Section */
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.home-content h1 {
+    font-size: 4.32rem; /* Increased by 8% */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.home-content h2 {
+    font-size: 3.18rem; /* Increased by 6% */
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.home-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.home-content .icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 40%; /* Increased by 10% */
+}
+
+.home-content .icons i {
+    font-size: 3.15rem; /* Increased by 5% */
+    color: pink;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.home-content .icons i:hover {
+    transform: scale(1.2);
+}
